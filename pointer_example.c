@@ -3,6 +3,7 @@ void main(){
 
     int num=10;
     char ch='a';
+
     float f_val=10.33;
 
     int roll[]={5,6,8,12,56,12,36};
