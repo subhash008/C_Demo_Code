@@ -66,6 +66,10 @@ int mul(int x, int y){
 
 int doSomething(int x, int y,int (*p_fun) (int,int)){
 
+    //i will do something first
+
+    
+    //when i will get time i will p_fun
     int result=p_fun(x,y);
     return result;
 }

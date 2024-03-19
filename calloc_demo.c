@@ -8,7 +8,7 @@ int main(){
     printf("How many number you want to store? : ");
     scanf("%ld",&n);
 
-    int* buffer=(int*)malloc(sizeof(int)*n);
+    int* buffer=(int*)calloc(n,sizeof(int));
 
     if(buffer==NULL){
         printf("Err 34 : Not able to create buffer\n\n");
