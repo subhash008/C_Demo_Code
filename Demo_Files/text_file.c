@@ -23,26 +23,18 @@ int main(){
     }
 
     fprintf(fp,"%d %f %s\n",age,marks,name);
-    fprintf(fp,"%d %f %s\n",age,marks,name);
-    fprintf(fp,"%d %f %s\n",age,marks,name);
+    fprintf(fp,"%d %f %s\n",30,45.6,"Subhash");
+    fprintf(fp,"%d %f %s\n",45,98.5,"Anubha");
 
     fclose(fp);
 
     fp = fopen("data.txt","r");
 
-    // Reading data from file
-
-    printf("Data from file is : \n\n");
-
-    while(fscanf(fp,"%d %f %s",&g_age,&g_marks,name)!=EOF)
+    while(fscanf(fp,"%d %f %s",&g_age,&g_marks,g_name) !=EOF)
     {
-
-       printf("\n\nName: %s\nAge : %d\nMarks : %f",name,g_age,marks);
-
+        printf("\n\nName : %s\nAge : %d\nMarks : %f",g_name,g_age,g_marks);
     }
 
-
-    //printf("%u",fp);
     fclose(fp);
 
 }
