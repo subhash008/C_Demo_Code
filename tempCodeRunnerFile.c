@@ -1,3 +1,1 @@
-
-int add (int, int);
-void greet(char *);
+ SUM(2,3)*10;
