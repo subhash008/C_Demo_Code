@@ -1,0 +1,22 @@
+[
+	{
+		"roll" : 4,
+		"age" : 30,
+		"name" : Subhash
+	}
+	{
+		"roll" : 5,
+		"age" : 33,
+		"name" : aman
+	}
+	{
+		"roll" : 7,
+		"age" : 23,
+		"name" : Sumita
+	}
+	{
+		"roll" : 8,
+		"age" : 34,
+		"name" : Suman
+	}
+]
