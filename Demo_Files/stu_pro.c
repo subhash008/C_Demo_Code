@@ -64,7 +64,7 @@ void get_json(char *file_name){
        fprintf(fjson," %d,\n",stu.age);
 
        fprintf(fjson,"\t\t\"%s\" :","name");
-       fprintf(fjson," %s\n",stu.name);
+       fprintf(fjson," \"%s\"\n",stu.name);
 
         fprintf(fjson,"\t%c\n",'}');
 
