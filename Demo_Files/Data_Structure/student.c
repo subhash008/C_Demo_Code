@@ -19,10 +19,20 @@ void read_student(Student *stu,int *count, char * filename){
 
     *count=no;
 
+    printf("total student :%d\n\n",no);
+    char name[20];
+   // fscanf(fp,"%s",name);
+
+    //printf("name: %s\n\n",name);
+
     stu= (Student *) malloc (sizeof(Student)* no);
 
     for(int i=0;i<no;i++){
-        fscanf(fp, "%s %d %d", (*stu)[i].name, &(*stu)[i].roll, &(*stu)[i].marks);
+            fscanf(fp,"%s",stu[i].name);
+            fscanf(fp,"%d",&stu[i].roll);
+            fscanf(fp,"%d",&stu[i].marks);
+            //fscanf(fp,"%d",name);
+        //fscanf(fp, "%s %d %d", stu[i].name, &stu[i].roll, &stu[i].marks);
     }
     fclose(fp);
 
@@ -32,7 +42,7 @@ void print_student(Student *stu,int count){
 
     for(int i=0;i<count;i++){
 
-        printf("Name :%s\nRoll: %d\nMarks: %d\n",(*stu)[i].name, (*stu)[i].roll, (*stu)[i].marks);
+        printf("Name :%s\nRoll: %d\nMarks: %d\n",stu[i].name, stu[i].roll, stu[i].marks);
     }
 
 }
